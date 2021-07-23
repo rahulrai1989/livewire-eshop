@@ -26,7 +26,7 @@
             <div class="shopping-cart">
                 <!-- Head -->
                 <div class="header">
-                  Total: ₦{{ $cartTotal }}
+                  Total: £{{ $cartTotal }}
                   <button onclick="payWithPaystack()" class="checkout">Checkout</button>
                 </div>
               
@@ -58,7 +58,7 @@
                             </button>
                         </div>
                     
-                        <div class="total-price">₦{{ $item->total }}</div>
+                        <div class="total-price">£{{ $item->total }}</div>
                     </div>
                 @endforeach          
             </div>          

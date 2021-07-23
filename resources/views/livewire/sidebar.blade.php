@@ -1,12 +1,12 @@
 <aside>
     <div class="sidearea">
         <label for="pricerange">Highest Price:
-            <span> ₦{{ $pricerange ?? 7000 }}</span>
+            <span> £{{ $pricerange ?? 7000 }}</span>
         </label>
         <input wire:model.debounce.500ms="pricerange" id="pricerange" type="range" min="{{ $min }}" max="{{ $max }}"
             step="500" value="{{$pricerange}}" class="slider">
-            <span class="min">₦{{ $min }}</span>
-            <span class="max">₦{{ $max }}</span>
+            <span class="min">£{{ $min }}</span>
+            <span class="max">£{{ $max }}</span>
         </div>
     <div class="sidearea">
         <h4>Only Show Sale Items</h4>

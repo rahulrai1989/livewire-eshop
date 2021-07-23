@@ -4,7 +4,7 @@
         <span class="salepill">Sale</span>
     @endif
     <img src="{{url($item->img)}}" alt="Image of {{$item->name}}">
-    <p>₦{{$item->price}}</p>
+    <p>£{{$item->price}}</p>
     @isset($rowId)
         <button wire:click="removeFromCart('{{ $rowId }}')" wire:loading.attr="disabled" class="remove">Remove Item</button>
     @else
